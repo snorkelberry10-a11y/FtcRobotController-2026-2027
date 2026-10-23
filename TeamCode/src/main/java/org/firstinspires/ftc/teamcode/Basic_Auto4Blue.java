@@ -104,10 +104,10 @@ public class Basic_Auto4Blue extends OpMode
         // Pushing the left stick forward MUST make robot go forward. So adjust these two lines based on your first test drive.
         // Note: The settings here assume direct drive on left and right wheels.  Gear Reduction or 90 Deg drives may require direction flips
 
-        backLeftDrive.setDirection(DcMotorSimple.Direction.REVERSE);
-        frontLeftDrive.setDirection(DcMotorSimple.Direction.REVERSE);
-        frontRightDrive.setDirection(DcMotorSimple.Direction.FORWARD);
-        backRightDrive.setDirection(DcMotorSimple.Direction.FORWARD);
+        backLeftDrive.setDirection(DcMotorSimple.Direction.FORWARD);
+        frontLeftDrive.setDirection(DcMotorSimple.Direction.FORWARD);
+        frontRightDrive.setDirection(DcMotorSimple.Direction.REVERSE);
+        backRightDrive.setDirection(DcMotorSimple.Direction.REVERSE);
 
         backRightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         backLeftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
@@ -144,8 +144,8 @@ public class Basic_Auto4Blue extends OpMode
     @Override
     public void loop() {
 
-        MoveRobot(0,.7,0);
-        /*
+
+
         if (autoTimer.seconds() < .1)
         {
             Outtake.setVelocity(1300);
@@ -166,11 +166,11 @@ public class Basic_Auto4Blue extends OpMode
         }
         else if (autoTimer.seconds() < 7.5)
         {
-            MoveRobot(0,.5,0);
+            MoveRobot(0,.7,0);
         }
         else if (autoTimer.seconds() < 8)
         {
-            MoveRobot(0,-.5,0);
+            MoveRobot(0,-.7,0);
         }
         else if (autoTimer.seconds() < 8.5)
         {
@@ -192,7 +192,7 @@ public class Basic_Auto4Blue extends OpMode
         }
 
 
-*/
+
 
     }
 
