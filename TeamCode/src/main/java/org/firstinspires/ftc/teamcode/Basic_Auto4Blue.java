@@ -143,6 +143,9 @@ public class Basic_Auto4Blue extends OpMode
 
     @Override
     public void loop() {
+
+        MoveRobot(0,.7,0);
+        /*
         if (autoTimer.seconds() < .1)
         {
             Outtake.setVelocity(1300);
@@ -157,7 +160,19 @@ public class Basic_Auto4Blue extends OpMode
                 BallKicker.setPower(1);
             }
         }
-        else if (autoTimer.seconds() < 12.72)
+        else if (autoTimer.seconds() < 7.45)
+        {
+
+        }
+        else if (autoTimer.seconds() < 7.5)
+        {
+            MoveRobot(0,.5,0);
+        }
+        else if (autoTimer.seconds() < 8)
+        {
+            MoveRobot(0,-.5,0);
+        }
+        else if (autoTimer.seconds() < 8.5)
         {
             MoveRobot(0,0,0);
         }
@@ -166,9 +181,10 @@ public class Basic_Auto4Blue extends OpMode
             Intake.setPower(0);
             BallKicker.setPower(0);
             Intake.setPower(0);
-            MoveRobot(0,.2,0);
+            Outtake.setVelocity(0);
+            MoveRobot(0,.7,0);
         }
-        else if (autoTimer.seconds() < 14.5){
+        else if (autoTimer.seconds() < 15){
             MoveRobot(0,0,0);
         }
         else {
@@ -176,7 +192,7 @@ public class Basic_Auto4Blue extends OpMode
         }
 
 
-
+*/
 
     }
 

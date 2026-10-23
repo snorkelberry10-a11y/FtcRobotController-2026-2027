@@ -62,7 +62,7 @@ import java.util.zip.CRC32;
  * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 
-@TeleOp(name="BasicTeleop6780", group="Iterative OpMode")
+@TeleOp(name="BasicTeleop4BasicBot", group="Iterative OpMode")
 
 public class BasicTeleop4BasicBot extends OpMode
 {
@@ -194,6 +194,7 @@ public class BasicTeleop4BasicBot extends OpMode
         {
             Outtake.setVelocity(0);
         }
+
 
 
         if (gamepad2.y)
